@@ -24,7 +24,7 @@ public class ReckonByTimeTask implements Runnable {
             javaPlugin.getServer().getScheduler().runTask(javaPlugin,
                     () -> player.kickPlayer(Config.getKickMessage()));
         } else if (restTime < 5) {
-            player.sendMessage(String.format("您的游戏时间不足 %d 分钟", restTime));
+            player.sendMessage(String.format("Your rest available gaming time less than %d min(s)", restTime));
         }
     }
 }

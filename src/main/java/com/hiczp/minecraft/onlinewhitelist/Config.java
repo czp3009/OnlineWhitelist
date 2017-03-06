@@ -1,5 +1,6 @@
 package com.hiczp.minecraft.onlinewhitelist;
 
+import com.hiczp.minecraft.onlinewhitelist.dao.OnlineWhiteListDao;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -24,7 +25,9 @@ public class Config {
                 datasourceConfigurationSection.getString("url"),
                 datasourceConfigurationSection.getString("username"),
                 datasourceConfigurationSection.getString("password"));
+
         table = datasourceConfigurationSection.getString("table");
+        OnlineWhiteListDao.createTable(table);
 
         reckonByTime = fileConfiguration.getBoolean("reckon-by-time");
 

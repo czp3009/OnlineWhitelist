@@ -5,4 +5,4 @@ datasource:
   username: czp
   password: 88997817
 reckon-by-time: true
-kick-message: You are not in whitelist!
+kick-message: You are not in online whitelist!
