@@ -1,8 +1,11 @@
+#数据源设置
 datasource:
   driverClassName: com.mysql.cj.jdbc.Driver
   url: jdbc:mysql://rds.hiczp.com/minecraft
   table: online_whitelist
   username: czp
   password: 88997817
+#开启计时功能, 时长不足的玩家将被自动踢出
 reckon-by-time: true
+#踢出玩家时的提示语
 kick-message: You are not in online whitelist!
