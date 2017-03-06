@@ -1,0 +1,8 @@
+datasource:
+  driverClassName: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://rds.hiczp.com/minecraft
+  table: online_whitelist
+  username: czp
+  password: 88997817
+reckon-by-time: true
+kick-message: You are not in whitelist!
